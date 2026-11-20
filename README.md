@@ -77,4 +77,15 @@ git commit -m "Add reports evaluation and project documentation"
 ```
 
 ## Important limitation
+
+## Output Files
+
+- results.csv – Contains all feedback with classification.
+- urgent.csv – Contains urgent feedback for warden review.
+- summary.txt – Contains category counts and feedback summary.
+
+## Running the Project
+
+Run `mess_feedback_sorter.py` using Python IDLE.
+Use mock mode to test the project without an API key.
 The offline mock mode is for repeatable demonstration and testing. For the actual LLM assessment, set `MESS_LLM_API_KEY` and run without `--mock`. Review the provider's current model availability, pricing and free-tier quota before presenting.
