@@ -1,0 +1,7 @@
+﻿Tool part,What AI does,What Python checks/does,What can go wrong?,Human checkpoint
+Category,Suggests one category,Checks allowed category value,Ambiguous or mixed complaint,Committee reviews trends and examples
+Sentiment,Suggests positive/negative/neutral,Checks allowed sentiment,Sarcasm or mixed sentiment,Committee interprets context
+Urgent flag,Suggests health-risk urgency,Validates boolean; keyword safety net can only raise it,LLM may miss Tamil/Tanglish risk words; keywords may miss new terms,Warden reads EVERY comment in urgent.csv
+Summary,Writes <=12-word summary,Checks string and word count,May omit context or over-summarise,Warden checks original comment in urgent.csv
+Counts and percentage,No counting by AI,Python counts categories and negative percentage,Bad input rows can affect totals,Committee checks summary against reports
+Final action,No action taken by AI,Writes files only,Labels are not proof of a food-safety incident,Warden/committee investigate and decide

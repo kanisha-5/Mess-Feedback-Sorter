@@ -1,0 +1,24 @@
+AI DECISION JOURNAL
+===================
+1. Decision: Use an LLM to label category, sentiment, urgency and a short summary.
+   Reason: Feedback can be English, Tamil or Tanglish and may contain varied phrasing.
+   Risk: The model can misread sarcasm, local language or health-risk details.
+   Control: Strict JSON schema, validator, one retry and manual-review fallback.
+
+2. Decision: Keep all counting and percentage calculations in Python.
+   Reason: Counts must be reproducible and should not depend on generated text.
+   Risk: Incorrect or missing input rows can distort counts.
+   Control: CSV header validation and deterministic Python counting.
+
+3. Decision: Add a keyword safety net for health-risk terms.
+   Reason: A missed health risk must be surfaced for human attention.
+   Risk: The list can miss spelling variations or flag a harmless mention.
+   Control: It can only raise urgency, and the warden reviews original comments.
+
+4. Decision: Do not let the tool decide the response to a complaint.
+   Reason: A label is not evidence and does not replace institutional judgment.
+   Human checkpoint: Warden reads every row in urgent.csv; committee decides action.
+
+5. Decision: Keep API key in an environment variable.
+   Reason: Secrets must not be committed to GitHub.
+   Control: .env and local secret files are ignored by Git.

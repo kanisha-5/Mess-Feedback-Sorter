@@ -1,0 +1,6 @@
+﻿id,date,meal,comment,category,sentiment,urgent,summary
+F02,2026-10-01,Dinner,Found a small insect in the sambar,hygiene,negative,True,Possible food hygiene or health risk
+F08,2026-10-03,Dinner,Found hair in the curd,hygiene,negative,True,Possible food hygiene or health risk
+F11,2026-10-05,Breakfast,Milk smelled spoiled,hygiene,negative,True,Possible food hygiene or health risk
+F15,2026-10-06,Lunch,Sambar-la poochi irundhuchu,hygiene,negative,True,Possible food hygiene or health risk
+F19,2026-10-07,Dinner,I felt sick after eating the curry,hygiene,negative,True,Possible food hygiene or health risk

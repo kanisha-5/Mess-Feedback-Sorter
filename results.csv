@@ -1,0 +1,23 @@
+﻿id,date,meal,comment,category,sentiment,urgent,summary,status
+F01,2026-10-01,Lunch,Rice was undercooked again today,taste,negative,False,Taste needs improvement,mock
+F02,2026-10-01,Dinner,Found a small insect in the sambar,hygiene,negative,True,Possible food hygiene or health risk,mock
+F03,2026-10-02,Breakfast,The idli was soft and tasty,taste,positive,False,Food taste was appreciated,mock
+F04,2026-10-02,Lunch,There was too much salt in the rasam,taste,negative,False,Taste needs improvement,mock
+F05,2026-10-02,Dinner,Dinner was served 20 minutes late,timing,negative,False,Meal timing needs improvement,mock
+F06,2026-10-03,Lunch,ok,other,neutral,False,No specific feedback given,mock
+F07,2026-10-03,Breakfast,The chutney portion was too small,other,negative,False,General feedback needs review,mock
+F08,2026-10-03,Dinner,Found hair in the curd,hygiene,negative,True,Possible food hygiene or health risk,mock
+F09,2026-10-04,Lunch,Sambar was very spicy today,taste,negative,False,Taste needs improvement,mock
+F10,2026-10-04,Dinner,The food was fresh and good,taste,positive,False,Food taste was appreciated,mock
+F11,2026-10-05,Breakfast,Milk smelled spoiled,hygiene,negative,True,Possible food hygiene or health risk,mock
+F12,2026-10-05,Lunch,Rice quantity was not enough,quantity,negative,False,Food quantity was insufficient,mock
+F13,2026-10-05,Dinner,Meals are getting cold by serving time,timing,negative,False,Meal timing needs improvement,mock
+F14,2026-10-06,Breakfast,Pongal was super,taste,positive,False,Food taste was appreciated,mock
+F15,2026-10-06,Lunch,Sambar-la poochi irundhuchu,hygiene,negative,True,Possible food hygiene or health risk,mock
+F16,2026-10-06,Dinner,Food was bland and needs more flavour,taste,negative,False,Taste needs improvement,mock
+F17,2026-10-07,Breakfast,Idli was not cooked properly,taste,negative,False,Taste needs improvement,mock
+F18,2026-10-07,Lunch,Saapadu nalla irundhuchu,taste,positive,False,Food taste was appreciated,mock
+F19,2026-10-07,Dinner,I felt sick after eating the curry,hygiene,negative,True,Possible food hygiene or health risk,mock
+F20,2026-10-08,Lunch,Please increase the vegetable portion,other,negative,False,General feedback needs review,mock
+F21,2026-10-08,Dinner,Dinner timing is inconvenient,other,negative,False,General feedback needs review,mock
+F22,2026-10-09,Breakfast,The dosa was crispy and nice,other,negative,False,General feedback needs review,mock

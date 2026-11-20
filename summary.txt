@@ -1,0 +1,23 @@
+MESS FEEDBACK SORTER - SUMMARY
+==================================
+Total comments: 22
+
+COUNT PER CATEGORY:
+  taste: 9
+  hygiene: 5
+  quantity: 1
+  timing: 2
+  other: 5
+
+Negative comments: 17/22 (77.3%)
+Urgent comments: 5
+
+URGENT LIST (warden review required):
+  F02 | Dinner | Found a small insect in the sambar
+  F08 | Dinner | Found hair in the curd
+  F11 | Breakfast | Milk smelled spoiled
+  F15 | Lunch | Sambar-la poochi irundhuchu
+  F19 | Dinner | I felt sick after eating the curry
+
+Human checkpoint: The warden must read every comment in urgent.csv.
+This tool labels and sorts feedback; it does not decide or take action.

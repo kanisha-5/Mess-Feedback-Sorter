@@ -1,0 +1,26 @@
+COST AND LATENCY NOTE
+=====================
+Input used for demonstration: 22 comments.
+
+API-call estimate:
+- One API call per non-empty comment in the normal case.
+- Empty comments: 0 calls.
+- Invalid/error response: one retry, so at most 2 calls for that comment.
+- For N comments with E empty comments and R retries: estimated calls = (N - E) + R.
+- Example for 22 non-empty comments and no retries: 22 calls.
+- Worst case for 22 non-empty comments if every first attempt needs a retry: 44 calls.
+
+Latency:
+- Each request is sent sequentially in this beginner version.
+- Planning estimate: about 1–5 seconds per API call, depending on network, model load and response size.
+- 22 calls may therefore take roughly 22–110 seconds in the normal case, excluding local file work.
+- Actual timings should be measured during the live demonstration.
+
+Cost:
+- The program does not hard-code a price because API prices and free-tier quotas can change.
+- If the chosen model has sufficient free quota, the project may cost ₹0 for the tested day.
+- Otherwise: daily cost = input tokens × current input-token rate + output tokens × current output-token rate.
+- Check the provider's current pricing and quota before the showcase. Do not claim a fixed price without checking.
+- Mock mode makes no API calls and has no API cost.
+
+Important: The LLM never counts comments or calculates percentages. Python does all counting.

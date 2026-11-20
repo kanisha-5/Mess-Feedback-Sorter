@@ -1,0 +1,11 @@
+This project helped me understand how an AI-supported tool can solve a small real-world problem without handing every decision to AI. Hostel mess feedback may arrive in English, Tamil and Tanglish. Reading every comment manually can take time, and a possible food-safety issue may be hidden between ordinary complaints. The Mess Feedback Sorter organises the comments and places possible health risks in a separate urgent report.
+
+I used Python for the parts that should be predictable. The csv module reads the input file and writes the reports. Dictionaries store each comment and its labels. Functions separate the work into small steps: classify(), parse_reply(), is_valid(), apply_safety_net() and write_reports(). Python also counts the categories and calculates the percentage of negative comments. This is important because the LLM should not be trusted to calculate totals.
+
+The LLM is used only to suggest a category, sentiment, urgent flag and short summary. Its reply is checked before it is accepted. If the reply has missing or incorrect fields, the program retries once. If the second reply is still invalid, the program uses needs_manual_review. Empty comments are not sent to the API. I also added a safety net for words related to possible health risks. The safety net can make a comment urgent, but it cannot remove an urgent label.
+
+Testing showed why these checks are necessary. The evaluation cases cover taste, hygiene, quantity and timing. The red-team cases include an instruction hidden inside a comment, a Tanglish health-risk comment and an empty comment. These tests help check that the program does not blindly trust the input or the model.
+
+One important learning is that AI output is not always correct. A keyword list cannot understand every language variation, and an LLM may misunderstand context. Therefore, the project does not make decisions about punishment, refunds or kitchen operations. The warden must read every comment in urgent.csv and the mess committee decides what to do next.
+
+Overall, I learned to combine an LLM with ordinary Python validation, error handling, testing and human judgment. The most important design principle is that AI can help organise information, but people remain responsible for safety-related decisions.
